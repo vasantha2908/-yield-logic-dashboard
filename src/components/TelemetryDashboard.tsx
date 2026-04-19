@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Thermometer, Droplets, Fan, Leaf } from 'lucide-react';
 
 export default function TelemetryDashboard({ summaryOnly }: { summaryOnly?: boolean }) {
-  const [data, setData] = useState({ temp: -2.1, humidity: 88, airflow: 45, freshness: 95.5 });
+  const [data, setData] = useState({ temp: 22.0, humidity: 88, airflow: 45, freshness: 95.5 });
 
   useEffect(() => {
     const interval = setInterval(() => {
